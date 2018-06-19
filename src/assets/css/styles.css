@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+
+body {
+  background-color: #9a86f0;
+}
+
+::selection {
+  background: #9a86f0;
+  color: #fff;
+}

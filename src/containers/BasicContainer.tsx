@@ -1,0 +1,53 @@
+import * as React from 'react';
+import { Affix, Layout } from 'antd';
+import { pure } from 'recompose';
+import { Redirect, Route, Switch } from 'react-router-dom';
+
+import { Footer, Header, Privacy, Terms, NotFound } from '../components';
+import { LocaleType } from '../locales';
+import {
+  colorMap,
+  fontFamilyMap,
+  fontSizeMap,
+  lengthMap,
+  Styles,
+} from '../styles';
+
+interface BasicContainerProps {
+  readonly textMap: LocaleType;
+}
+
+const BasicContainer = pure(({ textMap }: BasicContainerProps) => {
+  return (
+    <Layout style={styles.container}>
+      <Affix>
+        <Header textMap={textMap} />
+      </Affix>
+      <Layout.Content>
+        <Switch>
+          <Route path="/privacy" render={() => <Privacy textMap={textMap} />} />
+          <Route path="/terms" render={() => <Terms textMap={textMap} />} />
+          <Route path="/404" render={() => <NotFound textMap={textMap} />} />
+          <Redirect to="/404" />
+        </Switch>
+      </Layout.Content>
+      <Footer textMap={textMap} />
+    </Layout>
+  );
+});
+
+export { BasicContainer };
+
+type StyleKey = 'container';
+const styles: Styles<StyleKey> = {
+  container: {
+    backgroundColor: colorMap.offWhite,
+    color: colorMap.primaryDark,
+    fontFamily: fontFamilyMap.body,
+    fontSize: fontSizeMap.sm,
+    fontWeight: 300,
+    lineHeight: fontSizeMap.lg,
+    minWidth: lengthMap.minWidth,
+    textAlign: 'center',
+  },
+};
