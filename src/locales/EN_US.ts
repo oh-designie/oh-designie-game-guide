@@ -9,17 +9,33 @@ export const EN_US = {
   googlePlay: 'Get IT ON Google Play',
   terms: {
     title: 'Terms of Sevice',
+    date: 'Effective from June 21, 2018, last updated on June 21, 2018.',
     p1: {
-      title: '1. title',
-      body1: '...',
+      title: '1. Accepting the Terms of Service',
+      sub1: '1-1. Definitions',
+      body1:
+        'Oh Designie applications for Android and iOS ("Apps"), websites ("Websites"), and related services (together with the Apps and Websites, the "Services") are operated by S&Y ("us", "we" or "our").',
+      sub2: '1-2. Agreement',
+      body2:
+        'Please read these terms carefully before using any of our services. By accessing or using any part of our services, you accept these terms. If you do not accept these terms, please stop using the services.',
+      sub3: '1-3. Children',
+      body3:
+        'All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Services. If you are a minor, you must have your parent or guardian read and agree to these Terms of Use prior to you using the Services.',
     },
     p2: {
-      title: '2. title',
-      body1: '...',
+      title: '2. Modifications to this Agreement',
+      body1:
+        'We may amend, change, or update these terms. We will alert you about any changes by updating the “Last updated” date of these terms and you waive any right to receive specific notice of each such change.',
     },
     p3: {
-      title: '3. title',
-      body1: '...',
+      title: '3. Intellectual Property Rights',
+      body1:
+        'All source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Services (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights.',
+    },
+    p4: {
+      title: '4. Contact',
+      body1:
+        'Questions, comments and requests regarding our terms and service are welcomed. Please contact us via twitter (@OhDesignie) or email (support@oh-designie.com).',
     },
   },
   privacy: {
