@@ -29,7 +29,7 @@ const BasicContainer = pure(({ textMap }: BasicContainerProps) => (
           <Route path="/privacy" render={() => <Privacy textMap={textMap} />} />
           <Route path="/terms" render={() => <Terms textMap={textMap} />} />
           <Route path="/404" render={() => <NotFound textMap={textMap} />} />
-          <Redirect to="/404" />
+          <Redirect from="*" to="/404" />
         </Switch>
       </Layout.Content>
       <Footer textMap={textMap} />
