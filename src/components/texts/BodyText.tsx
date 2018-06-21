@@ -30,5 +30,6 @@ const styles: Styles<StyleKey> = {
   md: {},
   lg: {
     fontWeight: 600,
+    lineHeight: fontSizeMap.md,
   },
 };

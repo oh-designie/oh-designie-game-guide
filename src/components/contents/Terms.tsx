@@ -14,11 +14,11 @@ export const Terms = pure(({ textMap }: TermsProps) => {
     <Chapter>
       <Heading size="lg" text={title} />
       <Heading text={p1.title} />
-      <BodyText text={p1.body} />
+      <BodyText text={p1.body1} />
       <Heading text={p2.title} />
-      <BodyText text={p2.body} />
+      <BodyText text={p2.body1} />
       <Heading text={p3.title} />
-      <BodyText text={p3.body} />
+      <BodyText text={p3.body1} />
     </Chapter>
   );
 });

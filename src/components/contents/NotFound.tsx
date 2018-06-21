@@ -9,11 +9,11 @@ interface NotFoundProps {
 }
 
 export const NotFound = pure(({ textMap }: NotFoundProps) => {
-  const { title, body } = textMap.notFound;
+  const { title, body1 } = textMap.notFound;
   return (
     <Chapter>
       <Heading size="lg" text={title} />
-      <BodyText size="md" text={body} />
+      <BodyText size="md" text={body1} />
     </Chapter>
   );
 });
