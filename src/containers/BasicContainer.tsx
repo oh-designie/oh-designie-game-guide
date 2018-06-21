@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Affix, Layout } from 'antd';
 import { pure } from 'recompose';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 import { Footer, Header, Home, Privacy, Terms, NotFound } from '../components';
 import { LocaleType } from '../locales';
@@ -17,8 +17,8 @@ interface BasicContainerProps {
   readonly textMap: LocaleType;
 }
 
-const BasicContainer = pure(({ textMap }: BasicContainerProps) => {
-  return (
+const BasicContainer = pure(({ textMap }: BasicContainerProps) => (
+  <BrowserRouter>
     <Layout style={styles.container}>
       <Affix>
         <Header textMap={textMap} />
@@ -34,8 +34,8 @@ const BasicContainer = pure(({ textMap }: BasicContainerProps) => {
       </Layout.Content>
       <Footer textMap={textMap} />
     </Layout>
-  );
-});
+  </BrowserRouter>
+));
 
 export { BasicContainer };
 
