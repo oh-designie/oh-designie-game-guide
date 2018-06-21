@@ -3,7 +3,7 @@ import { Affix, Layout } from 'antd';
 import { pure } from 'recompose';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
-import { Footer, Header, Privacy, Terms, NotFound } from '../components';
+import { Footer, Header, Home, Privacy, Terms, NotFound } from '../components';
 import { LocaleType } from '../locales';
 import {
   colorMap,
@@ -25,6 +25,7 @@ const BasicContainer = pure(({ textMap }: BasicContainerProps) => {
       </Affix>
       <Layout.Content>
         <Switch>
+          <Route exact path="/" render={() => <Home textMap={textMap} />} />
           <Route path="/privacy" render={() => <Privacy textMap={textMap} />} />
           <Route path="/terms" render={() => <Terms textMap={textMap} />} />
           <Route path="/404" render={() => <NotFound textMap={textMap} />} />
