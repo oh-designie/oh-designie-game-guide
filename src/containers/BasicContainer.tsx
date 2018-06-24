@@ -17,7 +17,7 @@ interface BasicContainerProps {
   readonly textMap: LocaleType;
 }
 
-const BasicContainer = pure(({ textMap }: BasicContainerProps) => (
+export const BasicContainer = pure(({ textMap }: BasicContainerProps) => (
   <BrowserRouter>
     <Layout style={styles.container}>
       <Affix>
@@ -36,8 +36,6 @@ const BasicContainer = pure(({ textMap }: BasicContainerProps) => (
     </Layout>
   </BrowserRouter>
 ));
-
-export { BasicContainer };
 
 type StyleKey = 'container';
 const styles: Styles<StyleKey> = {
