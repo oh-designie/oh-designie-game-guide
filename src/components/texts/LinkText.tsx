@@ -2,45 +2,54 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 import { colorMap, fontSizeMap, Styles } from '../../styles';
+import { Recomposer } from 'recomposer';
 
 interface LinkTextProps {
   readonly text: string;
   readonly to: string;
+  readonly style?: React.CSSProperties;
 }
 
-interface LinkTextState {
-  readonly hover: boolean;
-}
-
-export class LinkText extends React.Component<LinkTextProps, LinkTextState> {
-  state = {
-    hover: false,
-  };
-
-  render() {
-    const { text, to } = this.props;
-    const style = this.state.hover ? styles.over : styles.out;
-    return (
+export const LinkText = new Recomposer<LinkTextProps>()
+  .withState('hover', 'setHover', false)
+  .withHandlers({
+    onLinkClick: () => () => window.scrollTo(0, 0),
+    onMouseOver: ({ setHover }) => () => setHover(true),
+    onMouseOut: ({ setHover }) => () => setHover(false),
+  })
+  .mapProps(({ hover, ...rest }) => ({
+    hoverStyle: hover ? styles.over : styles.out,
+    ...rest,
+  }))
+  .pure()
+  .enhance(
+    ({
+      text,
+      to,
+      style = {},
+      hoverStyle,
+      onLinkClick,
+      onMouseOver,
+      onMouseOut,
+    }) => (
       <Link
-        style={{ ...styles.base, ...style }}
-        onMouseOver={this.onMouseOver}
-        onMouseOut={this.onMouseOut}
+        style={{ ...styles.base, ...style, ...hoverStyle }}
+        onClick={onLinkClick}
+        onMouseOver={onMouseOver}
+        onMouseOut={onMouseOut}
         to={to}
       >
         {text}
       </Link>
-    );
-  }
-
-  private onMouseOver = () => this.setState({ hover: true });
-
-  private onMouseOut = () => this.setState({ hover: false });
-}
+    ),
+  );
 
 type StyleKey = 'base' | 'out' | 'over';
 const styles: Styles<StyleKey> = {
   base: {
     fontSize: fontSizeMap.xs,
+    textDecoration: 'none',
+    transition: '0.3s all',
   },
   out: {
     color: colorMap.white,

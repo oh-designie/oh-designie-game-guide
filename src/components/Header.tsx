@@ -4,6 +4,7 @@ import { pure } from 'recompose';
 
 import { LocaleType } from '../locales';
 import { colorMap, fontSizeMap, spaceMap, Styles } from '../styles';
+import { LinkText } from './texts';
 
 interface HeaderProps {
   readonly textMap: LocaleType;
@@ -13,7 +14,7 @@ export const Header = pure(({ textMap }: HeaderProps) => (
   <Layout.Header style={styles.header}>
     <Row type="flex" justify="space-between" align="middle">
       <Col>
-        <a style={styles.logo}>{textMap.appTitle}</a>
+        <LinkText style={styles.logo} to="/" text={textMap.appTitle} />
       </Col>
     </Row>
   </Layout.Header>
