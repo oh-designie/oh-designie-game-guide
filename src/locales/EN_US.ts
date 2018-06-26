@@ -14,7 +14,7 @@ export const EN_US = {
       title: '1. Accepting the Terms of Service',
       sub1: '1-1. Definitions',
       body1:
-        'Oh Designie applications for Android and iOS ("Apps"), websites ("Websites"), and related services (together with the Apps and Websites, the "Services") are operated by S&Y ("us", "we" or "our").',
+        'Oh Designie applications for Android and iOS ("Apps"), websites ("Websites"), and related services (together with the Apps and Websites, the "Services") are operated by S & Y ("us", "we" or "our").',
       sub2: '1-2. Agreement',
       body2:
         'Please read these terms carefully before using any of our services. By accessing or using any part of our services, you accept these terms. If you do not accept these terms, please stop using the services.',
@@ -44,7 +44,7 @@ export const EN_US = {
     p1: {
       title: '1. Introduction',
       body1:
-        'At Oh Designie, S&Y ("we", "us" or "our") handle your personal information in a confidential and responsible way. Here is our Privacy Policy to explain how we collect, use and share it.',
+        'At Oh Designie, S & Y ("we", "us" or "our") handle your personal information in a confidential and responsible way. Here is our Privacy Policy to explain how we collect, use and share it.',
     },
     p2: {
       title: '2. Your Consent',
