@@ -37,6 +37,7 @@ type LengthKey =
   | 'categoryImg'
   | 'footerCircle'
   | 'footerTop'
+  | 'gameImg'
   | 'hero'
   | 'heroCircle'
   | 'minWidth';
@@ -48,6 +49,7 @@ export const lengthMap: Record<LengthKey, string> = {
   categoryImg: '180px',
   footerCircle: '2000px',
   footerTop: '54px',
+  gameImg: '140px',
   hero: '640px',
   heroCircle: '3200px',
   minWidth: '320px',
