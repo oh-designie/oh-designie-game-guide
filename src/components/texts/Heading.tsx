@@ -6,13 +6,16 @@ import { colorMap, fontFamilyMap, fontSizeMap, Styles } from '../../styles';
 interface HeadingProps {
   readonly size?: SizeKey;
   readonly text: string;
+  readonly style?: React.CSSProperties;
 }
 
-export const Heading = pure(({ size = 'md', text }: HeadingProps) => {
-  const dom: string = size === 'xl' ? 'h1' : size === 'lg' ? 'h2' : 'h3';
-  const style = { ...styles.base, ...styles[size] };
-  return React.createElement(dom, { style }, text);
-});
+export const Heading = pure(
+  ({ size = 'md', text, style = {} }: HeadingProps) => {
+    const dom: string = size === 'xl' ? 'h1' : size === 'lg' ? 'h2' : 'h3';
+    const elementStyle = { ...styles.base, ...styles[size], ...style };
+    return React.createElement(dom, { style: elementStyle }, text);
+  },
+);
 
 type SizeKey = 'md' | 'lg' | 'xl';
 type StyleKey = 'base' | SizeKey;

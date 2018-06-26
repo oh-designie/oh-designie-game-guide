@@ -7,6 +7,87 @@ export const EN_US = {
   download: 'Download',
   appStore: 'Download on the App Store',
   googlePlay: 'Get IT ON Google Play',
+  gameMode: {
+    practice: {
+      title: 'practice',
+      description:
+        'In practice mode, life point is not required. You can select any game on the list and play alone again and again.',
+    },
+    competition: {
+      title: 'competition',
+      description:
+        'In competition mode, you can play a 3 game match with an other user by 1 life point. The games are selected randomly. Also, you can earn exp to level up!',
+    },
+  },
+  gameInfo: {
+    brightness: {
+      category: 'color',
+      description: 'Tap a bright tile as quickly as possible.',
+      title: 'brightness',
+    },
+    colorCode1: {
+      category: 'color',
+      description: 'Tap a color circle of the color code shown.',
+      title: 'colorCode1',
+    },
+    colorCode2: {
+      category: 'color',
+      description: 'Tap a color circle of the color code shown.',
+      disabled: true,
+      title: 'colorCode2',
+    },
+    differentFont: {
+      category: 'typography',
+      description: 'Find a different font family letter.',
+      disabled: true,
+      title: 'differentFont',
+    },
+    gradient: {
+      category: 'color',
+      description: 'Slide color bars to make a beautiful gradient.',
+      disabled: true,
+      title: 'gradient',
+    },
+    majorityCase: {
+      category: 'typography',
+      description:
+        'Tap either an uppercase or a lowercase letter that letters are more than the another.',
+      title: 'majorityCase',
+    },
+    majorityShape: {
+      category: 'layout',
+      description:
+        'Tap one of the shape that has the largest number among shapes shown.',
+      title: 'majorityShape',
+    },
+    rectangle: {
+      category: 'layout',
+      description:
+        'Answer if a rectangle is larger or smaller than the previous one.',
+      title: 'rectangle',
+    },
+    sameColor: {
+      category: 'color',
+      description: 'Tap the same color circle as the shown color.',
+      disabled: true,
+      title: 'sameColor',
+    },
+    typeface: {
+      category: 'typography',
+      description: 'Select the font family of a shown letter',
+      title: 'typeface',
+    },
+  },
+  home: {
+    p1: {
+      title: 'Modes',
+      body1: 'There are 2 ways to enjoy Oh Designie.',
+    },
+    p2: {
+      title: 'Games',
+      body1: 'Some games will be available by level-up or updates.',
+    },
+  },
   terms: {
     title: 'Terms of Sevice',
     date: 'Effective from June 21, 2018, last updated on June 21, 2018.',
