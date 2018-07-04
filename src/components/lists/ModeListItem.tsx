@@ -4,37 +4,25 @@ import { List } from 'antd';
 const { Item } = List;
 import { pure } from 'recompose';
 
-import { IMAGES } from '../../constants';
 import { BodyText, Heading } from '../';
 import { Styles, spaceMap, lengthMap } from '../../styles';
 
-export interface ModeInfo {
+interface ModeListItemProps {
   readonly title: string;
   readonly description: string;
+  readonly imageUrl: string;
 }
 
-interface ModeListItemProps {
-  readonly modeInfo: ModeInfo;
-}
-
-export const ModeListItem = pure(({ modeInfo }: ModeListItemProps) => (
-  <Item
-    extra={
-      <img
-        width={lengthMap.gameImg}
-        alt={modeInfo.title}
-        src={IMAGES.MODES[modeInfo.title]}
+export const ModeListItem = pure(
+  ({ title, description, imageUrl }: ModeListItemProps) => (
+    <Item extra={<img width={lengthMap.gameImg} alt={title} src={imageUrl} />}>
+      <Item.Meta
+        title={<Heading style={styles.title} text={_.startCase(title)} />}
+        description={<BodyText text={description} />}
       />
-    }
-  >
-    <Item.Meta
-      title={
-        <Heading style={styles.title} text={_.startCase(modeInfo.title)} />
-      }
-      description={<BodyText text={modeInfo.description} />}
-    />
-  </Item>
-));
+    </Item>
+  ),
+);
 
 type StyleKey = 'title';
 const styles: Styles<StyleKey> = {
