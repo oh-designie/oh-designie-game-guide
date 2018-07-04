@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Affix, Layout } from 'antd';
+import { Affix, Layout, BackTop } from 'antd';
 import { pure } from 'recompose';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
@@ -33,6 +33,7 @@ export const BasicContainer = pure(({ textMap }: BasicContainerProps) => (
         </Switch>
       </Layout.Content>
       <Footer textMap={textMap} />
+      <BackTop />
     </Layout>
   </BrowserRouter>
 ));
