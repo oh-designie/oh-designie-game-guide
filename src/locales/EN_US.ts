@@ -74,18 +74,114 @@ export const EN_US = {
     },
     typeface: {
       category: 'typography',
-      description: 'Select the font family of a shown letter',
+      description: 'Select the font family of a letter shown.',
       title: 'typeface',
     },
   },
   home: {
-    p1: {
-      title: 'Modes',
-      body1: 'There are 2 ways to enjoy Oh Designie.',
+    start: {
+      title: { EN_US: 'How to Start', JP: 'はじめかた' },
+      body: {
+        EN_US: 'First, sign up to Oh Designie.',
+        JP: 'アプリで遊ぶには、まずはじめにサインアップする必要があります。',
+      },
+      p1: {
+        title: {
+          EN_US: 'Use Google',
+          JP: 'グーグルアカウントを使う場合',
+        },
+        sub1: {
+          EN_US: '1. Tap Google',
+          JP: '1. グーグルをタップする',
+        },
+        body1: {
+          EN_US:
+            'When you agree to our terms of service, please tap Google button to continue sign up.',
+          JP:
+            '利用規約を確認したら、左側のグーグルボタンをタップしてサインアップを続けてください。',
+        },
+        sub2: {
+          EN_US: '2. Tap Continue',
+          JP: '2. 続行をタップする',
+        },
+        body2: {
+          EN_US:
+            'Your device will ask you if you allow Oh Designie to access your Google account, please tap continue.',
+          JP:
+            'Oh Designieにグーグルサインインを許可するかどうか聞かれるポップアップが出てくるので、続行をタップして許可します。',
+        },
+        sub3: {
+          EN_US: '3. Select account',
+          JP: '3. アカウントを選ぶ',
+        },
+        body3: {
+          EN_US:
+            'Select an account you want to use. The display name and profile photo are used for Competition, ranking and etc. When success, home screen is shown.',
+          JP:
+            'Oh Designieで使用したいグーグルアカウントをタップします。表示名とプロフィール画像はCompetitionやランキングなどに使用されます。処理が完了するとホーム画面に移動します。',
+        },
+      },
     },
-    p2: {
-      title: 'Games',
-      body1: 'Some games will be available by level-up or updates.',
+    mode: {
+      title: {
+        EN_US: 'Modes',
+        JP: 'モード',
+      },
+      body: {
+        EN_US: 'There are 2 ways to enjoy Oh Designie.',
+        JP: 'Oh Designieには2つの楽しみ方があります。',
+      },
+    },
+    game: {
+      title: {
+        EN_US: 'Games',
+        JP: 'ゲーム一覧',
+      },
+      description: {
+        EN_US: 'Some games will be available by updates or leveling up.',
+        JP: '',
+      },
+    },
+    account: {
+      title: {
+        EN_US: 'Account',
+        JP: 'アカウント',
+      },
+      body: {
+        EN_US: 'Currently, you can only change your nickname.',
+        JP: '現在ニックネームのみ変更可能です。',
+      },
+      p1: {
+        title: {
+          EN_US: 'Change nickname',
+          JP: 'ニックネームを変更する',
+        },
+        sub1: {
+          EN_US: '1. Tap menu icon',
+          JP: '1. メニューアイコンをタップする',
+        },
+        body1: {
+          EN_US: 'Tap menu icon in home screen.',
+          JP: 'ホーム画面の左上にあるハンバーガーアイコンをタップします。',
+        },
+        sub2: {
+          EN_US: '2. Tap Account',
+          JP: '2. アカウントをタップする',
+        },
+        body2: {
+          EN_US: 'Tap Account button to see your information.',
+          JP:
+            'メニュー一覧が表示されるので、一番上のアカウントをタップします。',
+        },
+        sub3: {
+          EN_US: '3. Change nickname',
+          JP: '3. ニックネームを変更する',
+        },
+        body3: {
+          EN_US: 'Change your nickname and tap save button.',
+          JP: 'ニックネームを変更したら、Saveボタンをタップして完了です。',
+        },
+      },
     },
   },
   terms: {
