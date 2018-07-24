@@ -85,8 +85,16 @@ export const Privacy = pure(({ textMap }: PrivacyProps) => {
 
       <Heading text={p8.title} />
       <BodyText text={p8.body1} />
-      {renderList(p8.lists1.li1)}
-      {renderList(p8.lists1.li2)}
+      <ol style={styles.list}>
+        <li>
+          <BodyText text={p8.lists1.li1[0]} />
+          <BodyText text={p8.lists1.li1[1]} />
+        </li>
+        <li>
+          <BodyText text={p8.lists1.li2[0]} />
+          <BodyText text={p8.lists1.li2[1]} />
+        </li>
+      </ol>
 
       <Heading text={p9.title} />
       <BodyText text={p9.body1} />

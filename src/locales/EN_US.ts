@@ -90,7 +90,7 @@ export const EN_US = {
   },
   terms: {
     title: 'Terms of Sevice',
-    date: 'Effective from June 21, 2018, last updated on June 21, 2018.',
+    date: 'Effective from June 21, 2018, last updated on July 24, 2018.',
     p1: {
       title: '1. Accepting the Terms of Service',
       sub1: '1-1. Definitions',
@@ -114,14 +114,19 @@ export const EN_US = {
         'All source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Services (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights.',
     },
     p4: {
-      title: '4. Contact',
+      title: '4. Privacy',
+      body1:
+        'For information about how Oh Designie collects, uses, and shares your information, please review our Privacy Policy (https://www.oh-designie.com/privacy).',
+    },
+    p5: {
+      title: '5. Contact',
       body1:
         'Questions, comments and requests regarding our terms and service are welcomed. Please contact us via twitter (@OhDesignie) or email (support@oh-designie.com).',
     },
   },
   privacy: {
     title: 'Privacy Policy',
-    date: 'Effective from June 20, 2018',
+    date: 'Effective from June 20, 2018, last updated on July 24, 2018.',
     p1: {
       title: '1. Introduction',
       body1:
