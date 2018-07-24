@@ -9,7 +9,7 @@ interface TermsProps {
 }
 
 export const Terms = pure(({ textMap }: TermsProps) => {
-  const { title, date, p1, p2, p3, p4 } = textMap.terms;
+  const { title, date, p1, p2, p3, p4, p5 } = textMap.terms;
   return (
     <Chapter>
       <Heading size="lg" text={title} />
@@ -31,6 +31,9 @@ export const Terms = pure(({ textMap }: TermsProps) => {
 
       <Heading text={p4.title} />
       <BodyText text={p4.body1} />
+
+      <Heading text={p5.title} />
+      <BodyText text={p5.body1} />
     </Chapter>
   );
 });
